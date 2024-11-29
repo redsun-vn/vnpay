@@ -36,6 +36,7 @@ export function createPaymentUrl({
     buildPaymentUrlSearchParams(data).forEach((value, key) => {
         redirectUrl.searchParams.set(key, value);
     });
+    console.log('config', config);
     return redirectUrl;
 }
 
