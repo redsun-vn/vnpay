@@ -33,7 +33,7 @@
         "moment-timezone": "^0.5.43"
     },
     "devDependencies": {
-        "@biomejs/biome": "^1.8.3",
+        "@biomejs/biome": "^1.9.4",
         "@tsconfig/recommended": "^1.0.7",
         "@types/express": "^4.17.21",
         "@types/jest": "^29.5.5",
