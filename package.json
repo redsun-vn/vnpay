@@ -13,8 +13,6 @@
     "scripts": {
         "build": "rimraf ./lib && tsc",
         "prepare": "npm run build",
-        "postinstall": "npm run format:fix",
-        "postuninstall": "npm run format:fix",
         "test": "jest",
         "test:cov": "jest --coverage",
         "example": "ts-node ./example/index.ts",
@@ -23,7 +21,8 @@
         "lint:fix": "npx @biomejs/biome lint . --write",
         "format": "npx @biomejs/biome format .",
         "format:fix": "npx @biomejs/biome format --write .",
-        "release": "release-it"
+        "release": "release-it",
+        "prebuild": "npm run format:fix"
     },
     "keywords": ["vnpay", "vnpayjs", "vnpay.vn", "payment", "vn-payment", "vn-payments"],
     "author": "lehuygiang28 <lehuygiang28@gmail.com>",
